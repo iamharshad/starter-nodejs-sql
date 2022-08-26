@@ -1,0 +1,60 @@
+<%- include("partials/head.ejs") %>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">APP NAME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/add">Add Movies</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 mx-auto mt-5">
+      <form action="/post" method="post">
+        <div class="mb-3">
+          <label for="" class="form-label">Title</label>
+          <input name="title" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Ratings</label>
+          <input name="ratings" type="number" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Poster Url</label>
+          <input name="posterUrl" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Trailer Url</label>
+          <input name="trailerUrl" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Release Year</label>
+          <input name="releaseYear" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Language</label>
+          <input name="language" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Genre</label>
+          <input name="genre" type="text" class="form-control" id="" aria-describedby="" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
