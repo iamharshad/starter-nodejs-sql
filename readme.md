@@ -23,7 +23,7 @@ This project is structured as following
 ┃ ┃ ┣ 📜footer.ejs
 ┃ ┃ ┗ 📜head.ejs
 ┃ ┣ 📜add.ejs
-┃ ┗ 📜landing.ejs
+┃ ┗ 📜index.ejs
 ┣ 📜index.js (Entry point and will look for Routes)
 ┣ 📜package.json
 ```
